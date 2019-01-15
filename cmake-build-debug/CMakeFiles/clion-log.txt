@@ -1,0 +1,77 @@
+/opt/clion/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/joseph/Documents/Programming/CSG/libigl-example-project
+-- Creating target: igl::core (igl)
+CMake Warning (dev) at /opt/clion/bin/cmake/linux/share/cmake-3.13/Modules/FindOpenGL.cmake:270 (message):
+  Policy CMP0072 is not set: FindOpenGL prefers GLVND by default when
+  available.  Run "cmake --help-policy CMP0072" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  FindOpenGL found both a legacy GL library:
+
+    OPENGL_gl_LIBRARY: /usr/lib/libGL.so
+
+  and GLVND libraries for OpenGL and GLX:
+
+    OPENGL_opengl_LIBRARY: /usr/lib/libOpenGL.so
+    OPENGL_glx_LIBRARY: /usr/lib/libGLX.so
+
+  OpenGL_GL_PREFERENCE has not been set to "GLVND" or "LEGACY", so for
+  compatibility with CMake 3.10 and below the legacy GL library will be used.
+Call Stack (most recent call first):
+  /home/joseph/Documents/Programming/CSG/libigl/cmake/libigl.cmake:325 (find_package)
+  cmake/FindLIBIGL.cmake:36 (include)
+  CMakeLists.txt:10 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Creating target: igl::opengl (igl_opengl)
+-- Creating target: igl::opengl_glfw (igl_opengl_glfw)
+CMake Deprecation Warning at /home/joseph/Documents/Programming/CSG/libigl/external/glfw/CMakeLists.txt:10 (cmake_policy):
+  The OLD behavior for policy CMP0042 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+
+
+-- Could NOT find Vulkan (missing: VULKAN_INCLUDE_DIR) 
+-- Using X11 for window creation
+-- __cplusplus is 201402
+--   --> Do not link with Boost.Thread
+-- Boost version: 1.68.0
+-- Boost include dirs: /usr/include
+-- Boost libraries:    
+-- Build type: Debug
+-- USING CXXFLAGS = ' -fPIC -g'
+-- USING EXEFLAGS = ' '
+-- Targetting Unix Makefiles
+-- Using /usr/bin/c++ compiler.
+-- Requested component: Core
+-- Boost version: 1.68.0
+-- Found the following Boost libraries:
+--   thread
+--   system
+--   chrono
+--   date_time
+--   atomic
+-- Requested component: MPFR
+-- Requested component: GMP
+CMake Warning at /usr/lib/cmake/CGAL/CGAL_enable_end_of_configuration_hook.cmake:32 (message):
+  =======================================================================
+
+  CGAL performance notice:
+
+  The variable CMAKE_BUILD_TYPE is set to "Debug".  For performance reasons,
+  you should set CMAKE_BUILD_TYPE to "Release".
+
+  Set CGAL_DO_NOT_WARN_ABOUT_CMAKE_BUILD_TYPE to TRUE if you want to disable
+  this warning.
+
+  =======================================================================
+Call Stack (most recent call first):
+  CMakeLists.txt:9999 (CGAL_run_at_the_end_of_configuration)
+
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/joseph/Documents/Programming/CSG/libigl-example-project/cmake-build-debug
